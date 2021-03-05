@@ -2,10 +2,10 @@
 
 버전문제로 package.json에서 아래부분 삭제
 ```json
-    "devDependencies": {
-      "ts-loader": "^8.0.17",
-      "typescript": "^4.2.3"
-    }
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.9.2"
+  }
 ```
 
 재설치
