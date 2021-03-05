@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Object</title>
+</head>
+<body>
+	<script>
+		class Coffee {
+			constructor(name) {
+				this._name = name;
+				
+				//Change_Start
+				Coffee.salesVolume++;
+				//Change_End
+			}
+		
+			get name() {
+				return this._name;
+			}
+			
+			set name(name) {
+				this._name = name;
+			}
+			
+			display() {
+				console.log(this._name);
+			}
+			
+			//Change_Start
+			static getSalesVolume() {
+				return Coffee.salesVolume;
+			}
+			//Change_End
+		}
+		
+		//Change_Start
+		Coffee.salesVolume = 0;
+		//Change_End
+	
+		let coffee = new Coffee("Americano");
+		
+		console.log(coffee.name);
+		
+		//Change_Start
+		console.log(Coffee.getSalesVolume());
+		//Change_End
+		
+		
+		coffee = new Coffee("Espresso");
+		
+		console.log(coffee.name);
+		
+		//Change_Start
+		console.log(Coffee.getSalesVolume());
+		//Change_End
+		
+	</script>
+</body>
+</html>

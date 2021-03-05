@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "target": "es6",
+  //  "target": "es5",
+    "module": "commonjs",
+  //"module": "amd"
+    "sourceMap": false
+  },
+  "exclude": [
+    "node_modules",
+    "src/module-system/node_modules",
+    ".vscode"
+  ]
+}

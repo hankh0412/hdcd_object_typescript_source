@@ -1,0 +1,1 @@
+# hdcd_object_typescript_source
